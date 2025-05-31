@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.layout{
+    display: flex;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: blue;
+
+}
+p{
+    position: relative;
+    top: 5px;
+    color: white;
+}
+a{
+    color: white;
+}
