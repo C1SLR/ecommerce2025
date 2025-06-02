@@ -266,6 +266,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -445,6 +448,31 @@
       height: calc(var(--spacing) * 70);
     }
   }
+  .md\:w-6\/12 {
+    @media (width >= 48rem) {
+      width: calc(6/12 * 100%);
+    }
+  }
+  .md\:w-10\/12 {
+    @media (width >= 48rem) {
+      width: calc(10/12 * 100%);
+    }
+  }
+  .md\:w-11\/12 {
+    @media (width >= 48rem) {
+      width: calc(11/12 * 100%);
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
+    }
+  }
   .md\:gap-7 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 7);
@@ -458,6 +486,11 @@
   .md\:justify-self-end {
     @media (width >= 48rem) {
       justify-self: flex-end;
+    }
+  }
+  .md\:text-start {
+    @media (width >= 48rem) {
+      text-align: start;
     }
   }
   .lg\:h-100 {
